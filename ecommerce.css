@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header::before {
+    background: url("makeup2.jpg")no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.navigation {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    display: flex;
+    margin-left: 10vw;
+}
+
+li {
+    list-style: none;
+    margin: 20px;
+}
+
+.top {
+    height: 65vh;
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.head1 {
+    font-size: 4rem;
+    text-align: center;
+    font-size: 5rem;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-family: 'Bree Serif', serif;
+}
+
+ul :hover {
+    cursor: pointer;
+    color: greenyellow;
+    background-color: hotpink;
+}
+
+.btn {
+    border-radius: 9px;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    padding: 6px 20px;
+    cursor: pointer;
+}
+
+h1.serviceHeader {
+    text-align: center;
+    /* background-color:whitesmoke; */
+    padding-top: 20px;
+    color: tomato;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h1.connectHeader {
+    padding: 20px;
+    text-align: center;
+    color: tomato;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.mid {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 40px;
+}
+
+.mainMid {
+    position: relative;
+    height: 100vh;
+}
+
+.mainMid::before {
+    background: url("midback.jpg") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+}
+
+.mid .box .h-secondary {
+    font-size: 2 rem;
+    text-align: center;
+}
+
+.box {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgb(102, 98, 98);
+    transition: all .5s ease;
+    margin: 0px 20px;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+.h-secondary {
+    text-align: center;
+    color: palevioletred;
+}
+
+
+/* .mid .p-secondary {
+         text-align: center ;
+         color: red;
+    } */
+
+.mid img {
+    height: 50vh;
+    width: 25vw;
+    object-fit: cover;
+}
+
+.mid .p-secondary {
+    width: 80%;
+}
+
+.cont1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 10vh;
+    /* width: 100vw; */
+}
+
+.cont1 .logo {
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+}
+
+.cont img {
+    transition: all 0.5s ease-in-out;
+    object-fit: contain;
+}
+
+.cont img:hover {
+    transform: rotate(360deg);
+}
+
+.suscriber-form {
+    display: flex;
+    align-content: space-between;
+    height: 70vh;
+    align-items: center;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+}
+
+.suscriber-form>div {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formsub {
+    text-align: center;
+}
+
+.form1 {
+    display: flex;
+    margin: 10px 125px;
+    padding: 10px;
+}
+
+.btn2 {
+    padding: 10px 40px;
+    margin: 10px 125px;
+    background-color: burlywood;
+}
